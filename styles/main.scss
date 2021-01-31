@@ -1,8 +1,88 @@
+$color-main: #d35266;
+$color-light: #888;
+$color-dark: #383838;
+
+.nav-bar {
+  height: 1.5em;
+}
+
 .carousel-wrapper {
   width: 70%;
+}
+
+.nav-logo-img {
+  width: 20px;
+}
+
+.nav-button {
+  background-color: $color-main;
+  border: 0;
+  padding: 3px;
+  font-size: 0.8em;
+  border-radius: 2px;
 }
 
 .fake-body {
   height: 120vh;
   background-color: green;
+}
+
+.search-wrapper {
+  height: 400px;
+  background-image: url("../assets/images/logos/search-section-bg-img.png");
+  background-size: cover;
+}
+
+.custom-text-main {
+  color: $color-main;
+}
+
+.custom-text-light {
+  color: $color-light;
+}
+
+.custom-text-dark {
+  color: $color-dark;
+}
+
+.search-box {
+  width: 90%;
+
+  input,
+  button {
+    color: $color-light;
+    font-size: 0.8em;
+    line-height: 2.5em;
+  }
+
+  .search-button,
+  button {
+    width: 15%;
+    background-color: #000;
+  }
+
+  .search-input-1 {
+    width: 20%;
+  }
+
+  .search-input-2 {
+    width: 35%;
+  }
+
+  .search-input-3 {
+    width: 35%;
+  }
+}
+
+.search-inputs {
+  margin-left: 6%;
+  width: 80%;
+}
+
+.hot-ads-section {
+  margin-left: 15%;
+}
+
+.carousel .slide {
+  margin-left: 10%;
 }
