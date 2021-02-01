@@ -229,7 +229,7 @@ body {
 // Carousel settings
 .slider {
   width: 90%;
-  height: 30vw;
+  height: 32vw;
   // margin: 0 auto;
   border: 1px solid;
   overflow: hidden;
@@ -291,8 +291,20 @@ body {
 
   .slider-button,
   .slider-price {
-    text-align: center;
+    text-align: center !important;
+    font-size: 2vw;
+    line-height: 2.1vw;
     background-color: $color-main;
+  }
+
+  .slides-texts h5 {
+    margin-bottom: 1vw !important;
+    font-size: 2.2vw;
+  }
+
+  .slides-texts p {
+    margin-bottom: 1vw !important;
+    font-size: 2vw;
   }
 }
 
