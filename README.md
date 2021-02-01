@@ -27,7 +27,7 @@
 
 ### Acknowledgements
 * Microverse* 
-* Mohamed Awad for the design*
+* [Mohamed Awad](https://www.behance.net/M_Awad) for the design*
 
 ### License
 * This project is [MIT](lic.url) licensed.
