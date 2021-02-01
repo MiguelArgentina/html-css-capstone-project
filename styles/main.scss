@@ -223,46 +223,76 @@ body {
 }
 
 .hot-ads-section {
-  margin-left: 15%;
+  // margin-left: 15%;
 }
 
-#carouselExampleCaptions {
-  width: 40vw;
-}
+// Carousel settings
+.slider {
+  width: 90%;
+  height: 30vw;
+  // margin: 0 auto;
+  border: 1px solid;
+  overflow: hidden;
 
-.carousel-control-prev-icon {
-  border-radius: 50% !important;
-  border-color: $color-light !important;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-  border-radius: 50% !important;
-  border-color: $color-light !important;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-item {
-  // height: 300px;
-
-  #carouselButtons {
-    margin-left: 20vw;
-    position: absolute;
-    bottom: 0;
+  .slides {
+    width: 400.1%;
+    height: 100%;
+    animation: slide-1 2s linear 4s 1 forwards, slide-2 2s linear 8s 1 forwards, slide-3 2s linear 12s 1 forwards, slide-4 2s linear 16s 1 forwards;
   }
 
-  // img {
-  //   width: 50% !important;
-  // }
-
-  .carousel-caption {
-    position: absolute;
-    left: auto;
-    width: 50%;
+  .slider-1,
+  .slider-2,
+  .slider-3,
+  .slider-4 {
+    width: 25%;
     height: 100%;
-    background-color: white;
-    bottom: 0;
-    right: 0;
+    float: left;
+  }
+
+  @keyframes slide-1 {
+    from {
+      margin-left: 0;
+    }
+
+    to {
+      margin-left: -100%;
+    }
+  }
+
+  @keyframes slide-2 {
+    from {
+      margin-left: -100%;
+    }
+
+    to {
+      margin-left: -200%;
+    }
+  }
+
+  @keyframes slide-3 {
+    from {
+      margin-left: -200%;
+    }
+
+    to {
+      margin-left: -300%;
+    }
+  }
+
+  @keyframes slide-4 {
+    from {
+      margin-left: -300%;
+    }
+
+    to {
+      margin-left: 0;
+    }
+  }
+
+  .slider-button,
+  .slider-price {
+    text-align: center;
+    background-color: $color-main;
   }
 }
 
