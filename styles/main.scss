@@ -56,25 +56,37 @@ body {
   background-color: $color-bground;
 }
 
+.custom-text-main {
+  color: $color-main;
+}
+
+.custom-text-light {
+  color: $color-light;
+}
+
+.custom-text-dark {
+  color: $color-dark;
+}
+
 .nav-bar {
   height: 1.5em;
 }
 
-.nav-menu-text {
+.notifications-wrapper {
   font-size: 0.7em;
   font-family: $helv-med;
-}
-
-.carousel-wrapper {
-  width: 70%;
 }
 
 .nav-main-options {
   width: 100%;
 }
 
+.nav-menu-text {
+  font-size: 2.75vw;
+}
+
 .nav-logo-img {
-  width: 20px;
+  width: 4vw;
 }
 
 .nav-button {
@@ -103,7 +115,6 @@ body {
 }
 
 .icon-number {
-  // height: 50%;
   padding: 0;
   border: none;
   bottom: -0.2em;
@@ -111,18 +122,16 @@ body {
 }
 
 .icon-envelope {
-  // height: 50%;
   top: -0.2em;
   right: -0.2em;
 }
 
 .mobile-header {
   line-height: 1em;
-  // margin-left: 10%;
 }
 
 .mobile-header:first-child {
-  padding-left: 8%;
+  padding-left: 1%;
 }
 
 .mobile-header-text,
@@ -145,7 +154,7 @@ body {
 
 .product-card {
   background-color: white;
-  width: 48%;
+  // width: 48%;
 }
 
 .card img {
@@ -157,79 +166,104 @@ body {
   font-size: 0.8em;
 }
 
-.fake-body {
-  height: 120vh;
-  background-color: green;
-}
-
 .search-wrapper {
-  height: 230px;
+  height: 35vw;
   background-image: url("../assets/images/logos/search-section-bg-img.png");
   background-size: cover;
 }
 
 .search-brand-name {
-  font-size: 1.5em;
+  font-size: 6vw;
   font-family: $goth-bold;
 }
 
 .search-subtitle {
+  font-size: 3.1vw;
   font-family: $goth-round;
 }
 
-.custom-text-main {
-  color: $color-main;
-}
-
-.custom-text-light {
-  color: $color-light;
-}
-
-.custom-text-dark {
-  color: $color-dark;
+.search-inputs {
+  // width: 80%;
 }
 
 .search-box {
-  width: 60%;
+  width: 80%;
 
   input,
   button {
     color: $color-light;
-    font-size: 0.8em;
-    line-height: 2.8em;
+    font-size: 2.5vw;
+    line-height: 4vw;
   }
 
   .search-input-1 {
-    width: 30%;
+    width: 50vw;
   }
 
   .search-input-2 {
-    margin-left: 0.5%;
-    width: 35%;
+    // margin-left: 0.5%;
+    width: 50vw;
   }
 
   .search-input-3 {
-    margin-left: 0.5%;
-    width: 35%;
+    // margin-left: 0.5%;
+    width: 50vw;
   }
 
   .search-button {
-    width: 10%;
+    // width: 10%;
 
     button {
-      padding: 0 40%;
-      margin-left: -50%;
+      // margin-left: -80%;
+      // padding: 0 40%;
+      width: 20vw;
       background-color: #000;
     }
   }
 }
 
-.search-inputs {
-  width: 80%;
-}
-
 .hot-ads-section {
   margin-left: 15%;
+}
+
+#carouselExampleCaptions {
+  width: 40vw;
+}
+
+.carousel-control-prev-icon {
+  border-radius: 50% !important;
+  border-color: $color-light !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  border-radius: 50% !important;
+  border-color: $color-light !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d35266' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-item {
+  // height: 300px;
+
+  #carouselButtons {
+    margin-left: 20vw;
+    position: absolute;
+    bottom: 0;
+  }
+
+  // img {
+  //   width: 50% !important;
+  // }
+
+  .carousel-caption {
+    position: absolute;
+    left: auto;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .footer-wrapper {
@@ -241,5 +275,78 @@ body {
 
   a:hover {
     text-decoration: underline;
+  }
+}
+
+.item img {
+  height: 200px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-main-options {
+    width: 50%;
+  }
+
+  .nav-menu-text {
+    font-size: 15px;
+  }
+
+  .nav-logo-img {
+    width: 19px;
+  }
+
+  .nav-user-info {
+    // width: 25%;
+  }
+
+  .users-name {
+    margin: 0 10px;
+  }
+
+  .search-wrapper {
+    height: 23vw;
+  }
+
+  .search-brand-name {
+    font-size: 2.8em;
+    font-family: $goth-bold;
+  }
+
+  .search-subtitle {
+    font-size: 1em;
+    font-family: $goth-round;
+  }
+
+  .search-box {
+    width: 80%;
+
+    input,
+    button {
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    .search-input-1 {
+      width: 15vw;
+    }
+
+    .search-input-2 {
+      margin-left: 0.5%;
+      width: 18vw;
+    }
+
+    .search-input-3 {
+      margin-left: 0.5%;
+      width: 18vw;
+    }
+
+    .search-button {
+      margin-left: 10px;
+
+      button {
+        width: 10vw;
+        background-color: #000;
+      }
+    }
   }
 }

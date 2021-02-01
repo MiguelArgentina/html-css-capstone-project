@@ -17,7 +17,6 @@
 
 <body>
 
-
   <header class="header py-2 mt-0 sticky-top bg-dark">
     <nav class="nav-bar d-flex justify-content-around align-items-center justify-content-md-between">
       <div class="nav-main-options d-flex justify-content-around align-items-center justify-content-md-between">
@@ -25,11 +24,11 @@
           <img class="nav-logo-img" src="assets/images/logos/red-logo-black-bg-img.png" alt="ZATTIX logo">
           <div class="nav-menu-text text-white text-uppercase ms-1"><strong>ZATTIX</strong></div>
         </div>
-        <div class="nav-menu-text nav-menu-item ms-1 d-flex align-items-center text-center">
+        <div class="nav-menu-text nav-menu-item ms-2 d-flex align-items-center text-center">
           <i class="fas fa-home custom-text-main"></i>
           <div class="nav-menu-text custom-text-main text-uppercase ms-1">Home</div>
         </div>
-        <div class="nav-menu-text menu-item ms-1 d-flex align-items-center text-center">
+        <div class="nav-menu-text menu-item ms-2 d-flex align-items-center text-center">
           <i class="fas fa-border-all custom-text-light"></i>
           <div class="custom-text-light text-uppercase ms-1">Collections</div>
         </div>
@@ -46,80 +45,100 @@
           <span class="material-icons icon-envelope nav-menu-notif-icon position-absolute custom-text-light">email</span>
           <span class="material-icons md-light icon-number border-0 p-0 nav-menu-notif-icon position-absolute custom-text-main">looks_two</span>
         </div>
-        <div class="text-nowrap text-white">Tucu Gomez</div>
+        <div class="text-nowrap text-white users-name">Tucu Gomez</div>
         <img class="rounded-circle nav-user-info-img me-5" alt="User profile pic" src="assets/images/user-image.jpg" data-holder-rendered="true" />
-
       </div>
     </nav>
   </header>
+
   <main>
 
-
-    <section class="search-wrapper d-none d-md-flex flex-column align-items-center">
-      <h2 class="search-brand-name text-center mt-5 mb-1 text-white"><strong>ZATTIX</strong></h2>
-      <h4 class="search-subtitle text-center mb-5 text-white">Buying and Selling Couldn´t be Simpler than this!</h4>
-      <div class="search-box d-inline-flex justify-content-between">
-        <div class="search-inputs d-flex justify-content-start">
-          <input class="search-input-1 text-nowrap ps-1 border-0" type="text" name="" value="All departments">
-          <input class="search-input-2 text-nowrap ps-1 border-0" type="text" name="" value="What do you search for?">
-          <input class="search-input-3 text-nowrap ps-1 border-0" type="text" name="" value="">
+    <section class="search-wrapper d-flex flex-column justify-content-center align-items-center">
+      <h2 class="search-brand-name text-center pt-1 pt-md-5 mb-1 text-white"><strong>ZATTIX</strong></h2>
+      <h4 class="search-subtitle text-center mb-2 mb-md-3 text-white">Buying and Selling <strong class="d-md-none"><br></strong> Couldn´t be Simpler than this!</h4>
+      <div class="search-box d-inline-flex d-md-flex align-items-center justify-content-between justify-content-md-start">
+        <div class="search-inputs d-flex flex-column flex-md-row justify-content-start">
+          <input class="search-input-1 custom-text-light text-nowrap ps-1 border-0" type="text" name="" placeholder="All departments">
+          <input class="search-input-2 custom-text-light text-nowrap ps-1 border-0" type="text" name="" placeholder="What do you search for?">
+          <input class="search-input-3 custom-text-light text-nowrap ps-1 border-0" type="text" name="" placeholder="Toys for babies">
         </div>
         <div class="search-button">
-          <button class="border-0" type="button" name="button">Search</button>
+          <button class="border-0" type="button" name="button"><strong>Search</strong></button>
         </div>
       </div>
     </section>
 
-
-    <section class="hot-ads-section my-5 d-none d-md-block mx-5 bg-white">
+    <section class="hot-ads-section my-5 d-md-block mx-5 bg-white">
       <span class="custom-text-light ms-3">HOT ADS</span>
-      <div class="d-flex mt-3">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/images/image-01.png" class="d-block w-100" alt="...">
+          <div class="carousel-item d-flex justify-content-between active">
+            <img src="assets/images/image-28.png" class="img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="custom-text-main">First slide label</h5>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur.</p>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/images/image-02.png" class="d-block w-100" alt="...">
+          <div class="carousel-item d-flex justify-content-between">
+            <img src="assets/images/image-29.png" class="img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="custom-text-main">Second slide label</h5>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur.</p>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/images/image-03.png" class="d-block w-100" alt="...">
+          <div class="carousel-item d-flex justify-content-between">
+            <img src="assets/images/image-30.png" class="img-fluid d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="custom-text-main">Third slide label</h5>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit.</p>
+              <p class="custom-text-light">Lorem ipsum dolor sit amet, consectetur.</p>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev custom-text-main" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <a class="carousel-control-next custom-text-main" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </a>
       </div>
-        <div class="hot-ad-text ms-3 d-block">
-        <h4>Lorem ipsum dolor sit amet.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quis aliquam deserunt doloremque debitis, reiciendis officiis eaque possimus laborum quidem.</p>
-        <p>By: Brand of the toy</p>
-        <p>Location: State</p>
-      </div>
-      </div>
+
+
     </section>
 
+    <section class="products-showcase babies-toys mx-3">
 
-    <section class="mobile-header my-3 d-flex align-content-center pb-2 border-bottom">
-      <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
-      <div class="mobile-header-text-2 me-3"><strong>Kid's toys</strong></div>
-      <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
-    </section>
-    <section class="products-showcase mx-3">
+      <section class="mobile-header mx-0 my-3 d-flex align-content-center pb-2 border-bottom">
+        <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
+        <div class="mobile-header-text-2 me-3"><strong>Babies toys</strong></div>
+        <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
+      </section>
 
-      <div class="container-fluid px-2">
-        <div class="row gx-3 justify-content-between">
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
+
+
+      <div class="container px-2">
+        <div class="row">
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
             <img src="assets/images/image-04.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -132,7 +151,7 @@
             </div>
           </div>
 
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
             <img src="assets/images/image-05.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -145,7 +164,7 @@
             </div>
           </div>
 
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
             <img src="assets/images/image-06.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -158,7 +177,7 @@
             </div>
           </div>
 
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
             <img src="assets/images/image-07.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -171,8 +190,30 @@
             </div>
           </div>
 
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
-            <img src="assets/images/image-08.png" class="card-img-top" alt="...">
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+    <section class="products-showcase kids-toys mx-3">
+
+      <section class="mobile-header mx-0 my-3 d-flex align-content-center pb-2 border-bottom">
+        <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
+        <div class="mobile-header-text-2 me-3"><strong>Kid's toys</strong></div>
+        <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
+      </section>
+
+
+
+      <div class="container px-2">
+        <div class="row">
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-17.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
               <h5 class="card-text-middle custom-text-main">Brand</h5>
@@ -184,8 +225,8 @@
             </div>
           </div>
 
-          <div class="product-card pt-2 mb-3 col-6 col-md-3 border">
-            <img src="assets/images/image-09.png" class="card-img-top" alt="...">
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-27.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
               <h5 class="card-text-middle custom-text-main">Brand</h5>
@@ -197,10 +238,261 @@
             </div>
           </div>
 
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-37.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-47.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
 
 
         </div>
       </div>
+
+
+
+
+    </section>
+
+    <section class="products-showcase video-games mx-3">
+
+      <section class="mobile-header mx-0 my-3 d-flex align-content-center pb-2 border-bottom">
+        <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
+        <div class="mobile-header-text-2 me-3"><strong>Video Games</strong></div>
+        <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
+      </section>
+
+
+
+      <div class="container px-2">
+        <div class="row">
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-22.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-23.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-24.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-25.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+    <section class="products-showcase vehicles mx-3">
+
+      <section class="mobile-header mx-0 my-3 d-flex align-content-center pb-2 border-bottom">
+        <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
+        <div class="mobile-header-text-2 me-3"><strong>Vehicles</strong></div>
+        <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
+      </section>
+
+
+
+      <div class="container px-2">
+        <div class="row">
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-32.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-33.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-34.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-35.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+    <section class="products-showcase other mx-3">
+
+      <section class="mobile-header mx-0 my-3 d-flex align-content-center pb-2 border-bottom">
+        <div class="mobile-header-text ms-4 me-3"> <strong> <i class="fas fa-truck"></i></strong></div>
+        <div class="mobile-header-text-2 me-3"><strong>Other toys</strong></div>
+        <div class="mobile-header-text">Category &nbsp; &#62; &nbsp; Sub-Category &nbsp; &#62; &nbsp; Sub-Sub-Category</div>
+      </section>
+
+
+
+      <div class="container px-2">
+        <div class="row">
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-42.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-43.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-44.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 product-card pt-2 mb-3 border">
+            <img src="assets/images/image-45.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text-top">Lorem ipsum dolor sit amet, consectetur.</p>
+              <h5 class="card-text-middle custom-text-main">Brand</h5>
+              <p class="card-text-bottom">Lorem ipsum dolor sit.</p>
+              <div class="bottom-items d-flex align-items-center justify-content-between">
+                <i class="fas fa-plus p-1 custom-text-light border"></i>
+                <div class="custom-text-main">$450</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
     </section>
 
     <footer>
@@ -210,6 +502,7 @@
         <div class="footer-design-owner custom-text-light">Designer by <a class="custom-text-light" href="https://www.behance.net/M_Awad">Mohammed Awad</a></div>
       </div>
     </footer>
+
   </main>
   <!-- Optional JavaScript; choose one of the two! -->
 
