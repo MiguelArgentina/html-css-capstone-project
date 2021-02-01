@@ -1,7 +1,7 @@
 # Week 4 Project on Microverse 2.0 Program - HTML&CSS Capstone Project
 
 
-> This project asses the understanding if the first three weeks at Microverse Curriculum. It will be built using a mix of float, gris, flexbox and Booststrap framework. The goal is to create an online shop demo for a Toy store.
+> The goal of this project is to asses the understanding if the first three weeks at Microverse Curriculum. It will be built using a mix of float, gris, flexbox and Booststrap framework. The goal is to create an online shop demo for a Toy store.
 
 
 # Built With
