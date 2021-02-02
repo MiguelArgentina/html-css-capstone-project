@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="nav-menu-text nav-user-info d-none d-md-flex align-items-center justify-content-md-between">
-        <div class="notifications-wrapper position-relative">
+        <div class="notifications-wrapper position-relative me-2">
           <span class="material-icons icon-envelope nav-menu-notif-icon position-absolute custom-text-light">email</span>
           <span class="material-icons md-light icon-number border-0 p-0 nav-menu-notif-icon position-absolute custom-text-main">looks_two</span>
         </div>
@@ -73,8 +73,72 @@
       <div class="row">
         <div class="col-12 col-md-3">
           <div class="row">
-            <div class="col-12">
-              Search filters
+            <div class="col-12 filters-column">
+              <p>Filter your results</p>
+              <div class="filter-section-wrapper">
+                <div class="filter-section">
+                  <h4>Department</h4>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter01">
+                    <label for="filter01">Babies toys</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter02">
+                    <label for="filter02">Kids toys</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter03">
+                    <label for="filter03">Video Games</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter04">
+                    <label for="filter04">Vehicles</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter05">
+                    <label for="filter05">Other toys</label>
+                  </div>
+                </div>
+                <div class="filter-section">
+                  <h4>Condition</h4>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter01">
+                    <label for="filter01">New</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter02">
+                    <label for="filter02">Used</label>
+                  </div>
+                </div>
+                <div class="filter-section">
+                  <h4>Location</h4>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter01">
+                    <label for="filter01">&lang; 10 mi</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter02">
+                    <label for="filter02">&lang; 50 mi</label>
+                  </div>
+                  <div class="filter-selector-item">
+                    <input type="checkbox" name="filter03">
+                    <label for="filter03">&rang; 50 mi</label>
+                  </div>
+                </div>
+                <div class="filter-section">
+                  <h4>Price</h4>
+                  <div class="filter-price-inputs-wrapper">
+                    <div class="filter-selector-item price-inputs-container">
+                      <label for="filter01">Min price</label>
+                      <input class="filter-price-input" maxlength="5" type="text" placeholder="0" name="filter01">
+                    </div>
+                    <div class="filter-selector-item price-inputs-container">
+                      <label for="filter02">Max price</label>
+                      <input class="filter-price-input" maxlength="5" type="text" placeholder="0" name="filter02">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -92,9 +156,9 @@
               </div>
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
-                <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                <div class="slider-text-btn-wrapper d-flex flex-row align-items-center">
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -113,8 +177,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -133,8 +197,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-1 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -153,8 +217,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -173,8 +237,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -193,8 +257,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -213,8 +277,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>
@@ -233,8 +297,8 @@
               <div class="result-last-line d-flex justify-content-between">
                 <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
                 <div class="slider-text-btn-wrapper d-flex flex-row">
-                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
-                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                  <button type="button" class="btn me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
                 </div>
               </div>
             </div>

@@ -184,15 +184,15 @@ body {
 }
 
 .card-body * {
-  font-size: 0.8em;
+  font-size: 2.75vw;
 }
 
 .card-img-top {
-  height: 50%;
+  height: auto;
 }
 
 .card-body {
-  height: 50%;
+  height: auto;
 }
 
 .search-wrapper {
@@ -357,15 +357,65 @@ body {
 
 .search-result-card {
   height: 40vw;
+
+  .image-square {
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1% !important;
+  }
+
+  .search-texts {
+    font-size: 2.7vw;
+    height: 90%;
+  }
+
+  .search-texts h5 {
+    font-size: 3vw;
+  }
+
+  .slider-text-btn-wrapper button {
+    text-align: center !important;
+    height: 70%;
+    font-size: 2.8vw;
+    background-color: $color-main;
+    border-color: $color-main;
+    white-space: nowrap;
+  }
 }
 
-.image-square {
-  width: 30%;
-  overflow: hidden;
-}
+.filters-column {
+  padding-top: 1em;
 
-.search-texts {
-  height: 90%;
+  * {
+    font-family: $helv-light;
+  }
+
+  .filter-section-wrapper {
+    display: flex;
+  }
+
+  .filter-section {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .filter-section-wrapper div {
+    flex-basis: 33%;
+    font-size: 2.75vw;
+  }
+
+  .filter-section-wrapper div h4 {
+    font-family: $helv-med;
+    font-size: 2.75vw;
+  }
+
+  .filter-price-input {
+    width: 50%;
+  }
+
+  .price-inputs-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -435,4 +485,67 @@ body {
       }
     }
   }
+
+  .mobile-header-text,
+  .mobile-header-text-2 {
+    font-size: 1.25em;
+  }
+
+  .mobile-header-text-2 {
+    font-size: 1.5em;
+  }
+
+  .card-body * {
+    font-size: 1.5vw;
+  }
+
+  .search-result-card {
+    height: 20vw;
+    max-height: 25vw;
+
+    .image-square {
+      width: 40%;
+      max-height: 80%;
+    }
+
+    .search-texts {
+      font-size: 0.9em;
+      height: 90%;
+    }
+
+    .search-texts h5 {
+      font-size: 1.3em;
+    }
+
+    .slider-text-btn-wrapper button {
+      height: 70%;
+      font-size: 0.9em;
+    }
+  }
+
+  .filters-column {
+    padding-top: 1em;
+
+    .filter-section-wrapper {
+      display: block;
+    }
+
+    .filter-section {
+      margin-bottom: 10%;
+      padding-bottom: 3%;
+    }
+
+    .filter-section-wrapper div {
+      font-size: 1.5vw;
+    }
+
+    .filter-section-wrapper div h4 {
+      font-size: 1.75vw;
+    }
+
+    .price-inputs-container {
+      margin-bottom: 5%;
+    }
+  }
+
 }
