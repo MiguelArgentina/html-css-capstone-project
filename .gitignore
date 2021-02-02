@@ -1,6 +1,6 @@
 # .gitignore
 node_modules/
-
+hint-report/
 .DS_Store
 
 .github/workflows/hint-report/
