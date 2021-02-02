@@ -68,6 +68,26 @@ body {
   color: $color-dark;
 }
 
+.custom-font-goth-bold {
+  font-family: $goth-bold;
+}
+
+.custom-font-goth-round {
+  font-family: $goth-round;
+}
+
+.custom-font-helv-bold {
+  font-family: $helv-bold;
+}
+
+.custom-font-helv-med {
+  font-family: $helv-med;
+}
+
+.custom-font-helv-light {
+  font-family: $helv-light;
+}
+
 .nav-bar {
   height: 1.5em;
 }
@@ -137,12 +157,13 @@ body {
 .mobile-header-text,
 .mobile-header-text-2 {
   color: $color-light;
-  font-size: 0.65em;
+  font-size: 0.75em;
   font-family: $helv-light;
 }
 
 .mobile-header-text-2 {
   font-weight: bold;
+  font-size: 0.8em;
   color: $color-dark;
 }
 
@@ -164,6 +185,14 @@ body {
 
 .card-body * {
   font-size: 0.8em;
+}
+
+.card-img-top {
+  height: 50%;
+}
+
+.card-body {
+  height: 50%;
 }
 
 .search-wrapper {
@@ -320,8 +349,17 @@ body {
   }
 }
 
-.item img {
-  height: 200px;
+.search-result-card {
+  height: 40vw;
+}
+
+.image-square {
+  width: 30%;
+  overflow: hidden;
+}
+
+.search-texts {
+  height: 90%;
 }
 
 @media only screen and (min-width: 768px) {

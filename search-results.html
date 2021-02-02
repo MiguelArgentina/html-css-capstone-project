@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+  <!-- Google Material Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/main.min.css">
+  <title>HTML&CSS Capstone Project</title>
+</head>
+
+<body>
+
+  <header class="header py-2 mt-0 sticky-top bg-dark">
+    <nav class="nav-bar d-flex justify-content-around align-items-center justify-content-md-between">
+      <div class="nav-main-options d-flex justify-content-around align-items-center justify-content-md-between">
+        <div class="logo-name-wrapper d-flex align-items-center text-center justify-content-md-between ms-3 ms-md-5" d-flex>
+          <img class="nav-logo-img" src="assets/images/logos/red-logo-black-bg-img.png" alt="ZATTIX logo">
+          <div class="nav-menu-text text-white custom-font-helv-med  text-uppercase ms-1"><strong>ZATTIX</strong></div>
+        </div>
+        <div class="nav-menu-text nav-menu-item ms-2 d-flex align-items-center text-center">
+          <i class="fas fa-home custom-text-main"></i>
+          <div class="nav-menu-text custom-text-main text-uppercase custom-font-helv-light ms-1">Home</div>
+        </div>
+        <div class="nav-menu-text menu-item ms-2 d-flex align-items-center text-center">
+          <i class="fas fa-border-all custom-text-light"></i>
+          <div class="custom-text-light custom-font-helv-light text-uppercase ms-1">Collections</div>
+        </div>
+        <div class="nav-menu-text menu-item ms-3 d-flex align-items-center text-center ms-1  me-3 me-md-0 ">
+          <i class="fas fa-shopping-cart custom-text-light"></i>
+          <div class="nav-menu-text custom-text-light custom-font-helv-light text-nowrap text-uppercase ms-1">Purchase list</div>
+        </div>
+        <div class="nav-menu-text menu-item ms-3 d-none d-md-flex text-nowrap align-items-center text-center ms-1 me-md-5">
+          <button class="nav-button text-white custom-font-helv-light text-uppercase" type="button" name="button"><strong>POST AN AD</strong></button>
+        </div>
+      </div>
+      <div class="nav-menu-text nav-user-info d-none d-md-flex align-items-center justify-content-md-between">
+        <div class="notifications-wrapper position-relative">
+          <span class="material-icons icon-envelope nav-menu-notif-icon position-absolute custom-text-light">email</span>
+          <span class="material-icons md-light icon-number border-0 p-0 nav-menu-notif-icon position-absolute custom-text-main">looks_two</span>
+        </div>
+        <div class="text-nowrap text-white custom-font-helv-med users-name">Tucu Gomez</div>
+        <img class="rounded-circle nav-user-info-img me-5" alt="User profile pic" src="assets/images/user-image.jpg" data-holder-rendered="true" />
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="search-wrapper d-flex flex-column justify-content-center align-items-center">
+      <h2 class="search-brand-name text-center pt-1 pt-md-5 mb-1 custom-font-goth-bold text-white"><strong>ZATTIX</strong></h2>
+      <h4 class="search-subtitle text-center mb-2 mb-md-3 custom-font-goth-round text-white">Buying and Selling <strong class="d-md-none"><br></strong> Couldn´t be Simpler than this!</h4>
+      <div class="search-box d-inline-flex d-md-flex align-items-center justify-content-between justify-content-md-start">
+        <div class="search-inputs d-flex flex-column flex-md-row justify-content-start">
+          <input class="search-input-1 custom-text-light custom-font-helv-light text-nowrap ps-1 border-0" type="text" name="" placeholder="All departments">
+          <input class="search-input-2 custom-text-light custom-font-helv-light text-nowrap my-1 my-md-0 ps-1 border-0" type="text" name="" placeholder="What do you search for?">
+          <input class="search-input-3 custom-text-light custom-font-helv-light text-nowrap ps-1 border-0" type="text" name="" placeholder="Toys for babies">
+        </div>
+        <div class="search-button">
+          <button class="border-0 custom-font-helv-med" type="button" name="button"><strong>Search</strong></button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="results-wrapper container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-3 border">
+          <div class="row">
+            <div class="col-12">
+              Search filters
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 border">
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-25.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-17.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-20.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-29.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-32.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-36.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-40.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-result-card d-flex border align-items-center justify-content-center">
+            <div class="image-square">
+              <img class="img-fluid ms-1 image-square-inside" src="assets/images/image-45.png" alt="">
+            </div>
+            <div class="search-texts ms-3 me-1 d-flex flex-column justify-content-around">
+              <h5 class="custom-text-main custom-font-helv-bold my-0">Product model name</h5>
+              <div class="slides-p-wrapper d-block align-middle">
+                <p class="custom-text-light my-0">Product descrption orem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>By:&nbsp;</strong>Product brand</p>
+              </div>
+              <div class="result-last-line d-flex justify-content-between">
+                <p class="custom-text-light custom-font-helv-med my-0"><strong>Location:&nbsp;</strong>Product location</p>
+                <div class="slider-text-btn-wrapper d-flex flex-row">
+                  <button type="button" class="btn btn-danger me-3 slider-price custom-font-helv-med text-white px-3">$23</button>
+                  <button type="button" class="btn btn-danger slider-button custom-font-helv-med text-white px-2"><i class="fas fa-shopping-basket"></i>&nbsp;Purchase</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <footer>
+      <div class="footer-wrapper p-1 d-flex justify-content-center">
+        <div class="footer-copyright custom-text-light custom-font-helv-light">Copyright&copy; 2015 Zattix.com </div>
+        <div class="footer-rights px-1 custom-text-light custom-font-helv-light">All rights reserved</div>
+        <div class="footer-design-owner custom-text-light custom-font-helv-light">Designer by <a class="custom-text-light" href="https://www.behance.net/M_Awad">Mohammed Awad</a></div>
+      </div>
+    </footer>
+
+  </main>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
