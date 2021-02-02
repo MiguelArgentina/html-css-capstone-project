@@ -218,8 +218,14 @@ body {
 .search-box {
   width: 80%;
 
+  .search-button-a {
+    appearance: button;
+    text-decoration: none;
+    background-color: black;
+  }
+
   input,
-  button {
+  .search-button-a {
     color: $color-light;
     font-size: 2.5vw;
     line-height: 4vw;
@@ -401,7 +407,7 @@ body {
     width: 80%;
 
     input,
-    button {
+    .search-button-a {
       font-size: 12px;
       line-height: 30px;
     }
@@ -423,7 +429,7 @@ body {
     .search-button {
       margin-left: 10px;
 
-      button {
+      .search-button-a {
         width: 10vw;
         background-color: #000;
       }
