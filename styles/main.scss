@@ -56,6 +56,10 @@ body {
   background-color: $color-bground;
 }
 
+a {
+  text-decoration: none;
+}
+
 .custom-text-main {
   color: $color-main;
 }
@@ -173,9 +177,13 @@ body {
   font-family: $helv-med;
 }
 
-.product-card {
+.category-items-wrapper {
+  display: flex;
+}
+
+.product-card- {
   background-color: white;
-  // width: 48%;
+  width: 600px;
 }
 
 .card img {
@@ -521,6 +529,15 @@ body {
     .slider-text-btn-wrapper button {
       height: 70%;
       font-size: 0.9em;
+    }
+  }
+
+  .footer-wrapper {
+    font-size: 0.9em;
+
+    .footer-rights {
+      margin-left: 1%;
+      margin-right: 1%;
     }
   }
 
