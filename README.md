@@ -30,4 +30,4 @@
 * [Mohamed Awad](https://www.behance.net/M_Awad) for the design *
 
 ### License
-* This project is [MIT](lic.url) licensed.
+* This project is [MIT](https://github.com/MiguelArgentina/html-css-capstone-project/blob/initial-branch/licence.md) licensed.
