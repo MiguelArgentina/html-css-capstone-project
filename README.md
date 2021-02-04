@@ -17,7 +17,7 @@
 
 # Web Page View
 
-<img width="1260" alt="Screenshot of the web page" src="https://github.com/MiguelArgentina/html-css-capstone-project/blob/initial-branch/online-store-screenshot.png">
+<img width="1200" alt="Screenshot of the web page" src="https://github.com/MiguelArgentina/html-css-capstone-project/blob/initial-branch/online-store-screenshot.png">
 
 ## Author
 
