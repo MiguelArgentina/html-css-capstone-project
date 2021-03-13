@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Miguel Ricardo Gomez
+Copyright (c) [2020] [Miguel Ricardo Gomez](https://github.com/MiguelArgentina)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
